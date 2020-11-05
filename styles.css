@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+
+  src: /* Modern Browsers */ url("../fonte/Poppins-SemiBold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+
+  src: /* Modern Browsers */ url("../fonte/Poppins-Regular.ttf")
+    format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins-SemiBold";
+  overflow-x: hidden;
+}
+
+.banner {
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.banner .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner .header-content img {
+  margin-bottom: 71.9px;
+}
+.banner .header-content h1 {
+  font-size: 62px;
+
+  line-height: 74.4px;
+  color: #fff;
+  text-align: center;
+  text-transform: lowercase;
+  max-width: 700px;
+}
+
+.banner .header-content a {
+  background: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 13.9px 82.5px;
+  margin: 55px 0 85px 0;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.banner .header-content a:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.1);
+}
+main {
+  margin: 36.9px 98.6px;
+}
+main p {
+  font-size: 18px;
+  margin-bottom: 49px;
+}
+.title {
+  font-size: 3.25em;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+section article {
+  padding: 20px 30px 0 30px;
+  height: 346px;
+  transition: 400ms;
+  cursor: pointer;
+}
+section p {
+  font-size: 20px;
+}
+section article:hover {
+  transform: scale(1.05);
+}
+.section-one .nature {
+  flex: 1;
+  margin-right: 30px;
+  background: url("./img/nature.png") no-repeat;
+  background-size: cover;
+}
+.section-one .daily {
+  flex: 2;
+  background: url("./img/daily.png") no-repeat;
+
+  background-size: cover;
+}
+.section-two .together {
+  flex: 1;
+  background: url("./img/together.png") no-repeat;
+  background-size: cover;
+}
+.together .title {
+  margin-top: 124px;
+}
+.section-three .analysis {
+  flex: 2;
+  margin-right: 30px;
+  background: url("./img/analysis.png") no-repeat;
+  text-align: right;
+  background-size: cover;
+}
+
+.section-three .pictures {
+  flex: 1;
+  background: url("./img/pictures.png") no-repeat;
+  background-size: cover;
+}
+
+.plan .title,
+.plan p {
+  color: #000;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  margin-top: 86px;
+  padding: 82px 98.6px;
+  position: relative;
+  height: 100%;
+}
+.plan .plan-header {
+  position: absolute;
+}
+.plan article {
+  padding: 0;
+}
+.plan .container-articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.container-articles h3 {
+  font-size: 2.125em;
+  line-height: 40px;
+}
+.container-articles h4 {
+  font-size: 1.25em;
+  line-height: 24px;
+}
+.container-articles p {
+  color: #fff;
+  font-family: Poppins-Regular;
+  font-size: 12px;
+  line-height: 14px;
+}
+.container-articles article {
+  margin-left: 30px;
+  width: 270px;
+}
+.container-articles article:first-of-type {
+  margin-left: 0px;
+}
+.article-title,
+.article-content {
+  padding: 18px 13px;
+}
+
+.article-title {
+  background-color: #005499;
+}
+.article-content {
+  background-color: #0088ed;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  display: grid;
+  align-content: flex-end;
+}
+
+.article-content {
+  position: relative;
+}
+.article-content p {
+  position: absolute;
+  bottom: 14px;
+  margin: 0 18px 0 0;
+  text-align: left;
+}
+.six .article-content {
+  height: 350px;
+}
+.five .article-content {
+  height: 300px;
+}
+.four .article-content {
+  height: 250px;
+}
+.three .article-content {
+  height: 200px;
+}
+
+.two .article-content {
+  height: 150px;
+}
+.one .article-content {
+  height: 100px;
+}
+@media (max-width: 1066px) {
+  .container-articles article {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2.25em;
+  }
+
+  .section-one .nature,
+  .section-three article.analysis {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
